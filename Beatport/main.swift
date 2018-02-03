@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let fetcher = Fetcher()
+fetcher.fetch()
