@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CE418151DAA54A900240B42"
-               BuildableName = "SwiftSoup.framework"
-               BlueprintName = "SwiftSoup-iOS"
-               ReferencedContainer = "container:SwiftSoup.xcodeproj">
+               BlueprintIdentifier = "1339378D20267809006CE9EC"
+               BuildableName = "Beatport"
+               BlueprintName = "Beatport"
+               ReferencedContainer = "container:Beatport.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,24 +29,14 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CE4181E1DAA54A900240B42"
-               BuildableName = "SwiftSoupTests.xctest"
-               BlueprintName = "SwiftSoupTests"
-               ReferencedContainer = "container:SwiftSoup.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8CE418151DAA54A900240B42"
-            BuildableName = "SwiftSoup.framework"
-            BlueprintName = "SwiftSoup-iOS"
-            ReferencedContainer = "container:SwiftSoup.xcodeproj">
+            BlueprintIdentifier = "1339378D20267809006CE9EC"
+            BuildableName = "Beatport"
+            BlueprintName = "Beatport"
+            ReferencedContainer = "container:Beatport.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,15 +53,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8CE418151DAA54A900240B42"
-            BuildableName = "SwiftSoup.framework"
-            BlueprintName = "SwiftSoup-iOS"
-            ReferencedContainer = "container:SwiftSoup.xcodeproj">
+            BlueprintIdentifier = "1339378D20267809006CE9EC"
+            BuildableName = "Beatport"
+            BlueprintName = "Beatport"
+            ReferencedContainer = "container:Beatport.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,15 +72,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8CE418151DAA54A900240B42"
-            BuildableName = "SwiftSoup.framework"
-            BlueprintName = "SwiftSoup-iOS"
-            ReferencedContainer = "container:SwiftSoup.xcodeproj">
+            BlueprintIdentifier = "1339378D20267809006CE9EC"
+            BuildableName = "Beatport"
+            BlueprintName = "Beatport"
+            ReferencedContainer = "container:Beatport.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

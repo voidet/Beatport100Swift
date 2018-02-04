@@ -1,9 +1,0 @@
-{
-  "commitish" : "1.6.0",
-  "Mac" : [
-    {
-      "name" : "SwiftSoup",
-      "hash" : "b02e2bc42507e5e11c2f074f4dfe145e6723547d93f5d0dc618c7d27da018ce3"
-    }
-  ]
-}

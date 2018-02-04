@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftSoup
 
 class Fetcher {
   
@@ -14,23 +15,26 @@ class Fetcher {
   
   func fetch() {
     for playlist in playlists {
-      fetchPage(playlist: playlist)
+      fetchPage(playlist: playlist, htmlResponse: { doc in
+        
+      })
     }
   }
   
-  private func fetchPage(playlist: Playlist) {
+  private func fetchPage(playlist: Playlist, htmlResponse: @escaping (Document) -> Void) {
 
-    let task = URLSession.shared.dataTask(with: URL(string: playlist.url)!) { (data, response, error) -> Void in
+   URLSession.shared.dataTask(with: URL(string: playlist.url)!) { (data, response, error) -> Void in
       
-      guard let data = data else {
-        self.sema.signal()
-        return
+      if let data = data {
+        let html = String(data: data, encoding: String.Encoding.utf8)!
+        if let doc: Document = try? SwiftSoup.parse(html) {
+          htmlResponse(doc)
+        }
       }
-      let result = NSString(data: data, encoding: String.Encoding.utf8.rawValue)!
-      print(result)
+      
       self.sema.signal()
-    }
-    task.resume()
+    }.resume()
+
     sema.wait()
   }
   
